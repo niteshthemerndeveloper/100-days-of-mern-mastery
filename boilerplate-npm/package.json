@@ -1,6 +1,8 @@
 {
 	"name": "fcc-learn-npm-package-json",
 	"description": "This project is a part of Freecodecamp backend development course. Literally, Freecodecamp is One of the best resources on this planet.",
+	"keywords": ["codingEnthusiast", "niteshthemerndeveloper", "freecodecamp", "100daysofcode", "backend", "development", "and", "apis"],
+	"license": "MIT",
 	"dependencies": {
 		"express": "^4.14.0"
 	}, 
