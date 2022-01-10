@@ -23,6 +23,20 @@ How to install and use open source packages available on NPM?
 
 ```
 
+Every `package.json` file should have following important details:
+
+- `name` - What is the name of the project?
+
+- `author` - who are the people who build this project?
+
+- `description` - Ideally, every project should have a description. It is not only important but also makes it easy to maintain.
+
+- `keywords` - It is an array of the Important keywords that will make it more easy to understand.
+
+- `license` - License is to inform users of what they are allowed to do with your project.
+
+Open Source Projects license include `MIT and BSD`
+
 2. ## Basic Node and Express Server
 
 3. ## Backend Development and APIs
