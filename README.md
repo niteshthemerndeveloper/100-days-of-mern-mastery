@@ -41,6 +41,10 @@ It also lets you state what the user can or can not do with the project.
 
 - `version` - The version field is the required field of the `package.json` file. It describes the version of your project.
 
+- `dependencies` - Have you wondered - How can npm know exactly what your project needs?
+
+Well! you tell npm by adding the dependencies section in the package.json file.
+
 2. ## Basic Node and Express Server
 
 3. ## Backend Development and APIs
