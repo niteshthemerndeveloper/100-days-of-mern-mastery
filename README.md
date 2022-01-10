@@ -37,6 +37,10 @@ Every `package.json` file should have following important details:
 
 Open Source Projects license include `MIT and BSD`
 
+It also lets you state what the user can or can not do with the project.
+
+- `version` - The version field is the required field of the `package.json` file. It describes the version of your project.
+
 2. ## Basic Node and Express Server
 
 3. ## Backend Development and APIs
