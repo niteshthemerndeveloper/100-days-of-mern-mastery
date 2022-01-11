@@ -49,7 +49,11 @@ MINOR version increments when you add functionality in a backwards-compatible ma
 And the PATCH version increments when you make bug fixes.
 
 ```
-Note: Tilde `~` symbol helps to upgrade to the latest version automatically.
+Note: Tilde `~` symbol helps to upgrade to the latest Patch version automatically.
+```
+
+```
+Note: Caret `^` symbol helps to upgrade to the latest Patch as well as MINOR versions automatically.
 ```
 
 - `dependencies` - Have you wondered - How can npm know exactly what your project needs?
