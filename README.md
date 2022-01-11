@@ -62,6 +62,8 @@ Well! you tell npm by adding the dependencies section in the package.json file.
 
 Note: We as a developer have rights to either add a package or remove it if there' no need.
 
+First Module Completed!
+
 2. ## Basic Node and Express Server
 
 3. ## Backend Development and APIs
