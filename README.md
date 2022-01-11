@@ -41,6 +41,17 @@ It also lets you state what the user can or can not do with the project.
 
 - `version` - The version field is the required field of the `package.json` file. It describes the version of your project.
 
+- Semantic Versioning: `MAJOR.MINOR.PATCH` -
+  MAJOR version increments when you make incompatible API changes.
+
+MINOR version increments when you add functionality in a backwards-compatible manner.
+
+And the PATCH version increments when you make bug fixes.
+
+```
+Note: `~` symbol helps to upgrade to the latest version automatically.
+```
+
 - `dependencies` - Have you wondered - How can npm know exactly what your project needs?
 
 Well! you tell npm by adding the dependencies section in the package.json file.
