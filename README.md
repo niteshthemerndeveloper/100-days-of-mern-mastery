@@ -14,7 +14,7 @@ It is divided into four main sections so you will find that there `4 folders`.
 
 Each `folder` is dedicated to the specific sections in the course.
 
-1. ## Managing Packages With NPM
+## 1. Managing Packages With NPM
 
 ```
 What is NPM?
@@ -64,7 +64,7 @@ Note: We as a developer have rights to either add a package or remove it if ther
 
 First Module Completed!
 
-2. ## Basic Node and Express Server
+## 2. Basic Node and Express Server
 
 How do you write a "Hello World" Program with Nodejs?
 
@@ -84,9 +84,11 @@ We can use `res.sendFile(__dirname + relativePath);` to send a file.
 
 **Note:** We always give absolute path when we have to send a file from our server.
 
-3. ## Backend Development and APIs
+To send many static assets, use a middleware function `express.static(PATH, absolutePath)` and call it using app.use().
 
-4. ## Claim Your Certifications!
+## 3. Backend Development and APIs
+
+## 4. Claim Your Certifications!
 
 Best,
 

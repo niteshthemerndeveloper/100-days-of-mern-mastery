@@ -6,4 +6,7 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html');
 });
 
+// send multiple static assets using middleware function
+app.use('/public', express.static(__dirname + '/public'));
+
 module.exports = app;
