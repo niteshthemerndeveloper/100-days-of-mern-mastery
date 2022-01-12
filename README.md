@@ -76,7 +76,13 @@ And you can execute it by using `node server.js`
 
 ### Create Your First Server/API Using Node and Express
 
-Check out the `[myApp.js]('./boilerplate-express/myApp.js')` file
+Check out the `[firstServer]('./boilerplate-express/firstServer.js')` file
+
+We have just created a server that responds with 'Hello Express' but what if we want to send a file to the client.
+
+We can use `res.sendFile(__dirname + relativePath);` to send a file.
+
+**Note:** We always give absolute path when we have to send a file from our server.
 
 3. ## Backend Development and APIs
 

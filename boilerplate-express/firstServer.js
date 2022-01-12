@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 
-// send a file as a response
+// app.METHOD(PATH, HANDLER);
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
+  res.send('Hello Express');
 });
 
 module.exports = app;
