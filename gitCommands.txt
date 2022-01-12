@@ -1,0 +1,12 @@
+Q.1 How to stage all files for changes?
+
+Use - git add .
+
+Q.2 How to check what changes have been made?
+
+Use - git status
+
+Q.3 How to undo stages local changes?
+
+Use - git reset file.txt
+
