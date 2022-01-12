@@ -66,6 +66,14 @@ First Module Completed!
 
 2. ## Basic Node and Express Server
 
+How do you write a "Hello World" Program with Nodejs?
+
+```node
+console.log('Hello World');
+```
+
+And you can execute it by using `node server.js`
+
 3. ## Backend Development and APIs
 
 4. ## Claim Your Certifications!
