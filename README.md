@@ -74,6 +74,10 @@ console.log('Hello World');
 
 And you can execute it by using `node server.js`
 
+### Create Your First Server/API Using Node and Express
+
+Check out the `[myApp.js]('./boilerplate-express/myApp.js')` file
+
 3. ## Backend Development and APIs
 
 4. ## Claim Your Certifications!
