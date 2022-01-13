@@ -9,4 +9,8 @@ app.get('/', (req, res) => {
 // send multiple static assets using middleware function
 app.use('/public', express.static(__dirname + '/public'));
 
+app.get('/json', (req, res) => {
+  res.json({ message: 'Hello json' });
+});
+
 module.exports = app;

@@ -86,6 +86,14 @@ We can use `res.sendFile(__dirname + relativePath);` to send a file.
 
 To send many static assets, use a middleware function `express.static(PATH, absolutePath)` and call it using app.use().
 
+Serve _JSON_ on a Specific Route - The most preferred way of moving information around the web is _JSON_.
+
+### JSON Object looks as your package.json file
+
+```json
+{ "key": "value" }
+```
+
 ## 3. Backend Development and APIs
 
 ## 4. Claim Your Certifications!
