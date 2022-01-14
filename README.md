@@ -94,6 +94,18 @@ Serve _JSON_ on a Specific Route - The most preferred way of moving information 
 { "key": "value" }
 ```
 
+What is the environment variable?
+
+- Environment variables are used to store private database URIs or API keys.
+
+**Note** 3 rules to keep in mind when defining an environment variable.
+
+1. It should be in all uppercase.
+
+2. It need not be wrapped in quotes.
+
+3. It should be separated by underscores and no space is allowed between the `key and value`
+
 ## 3. Backend Development and APIs
 
 ## 4. Claim Your Certifications!
