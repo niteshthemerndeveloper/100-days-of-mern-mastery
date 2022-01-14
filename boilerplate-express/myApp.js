@@ -16,6 +16,7 @@ app.use((req, res, next) => {
   next();
 });
 
+// env variable server route
 app.get('/json', (req, res) => {
   if (process.env.MESSAGE_STYLE === 'uppercase') {
     return res.json({ message: 'HELLO JSON' });
@@ -34,5 +35,11 @@ app.get(
     res.json({ time: req.time });
   }
 );
+
+// echo server
+app.get('/:word/echo', (req, res) => {
+  console.log(req.params);
+  res.json({ echo: req.params.word });
+});
 
 module.exports = app;

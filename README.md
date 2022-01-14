@@ -126,6 +126,16 @@ And finishes the cycle by either adding some data or sending a response.
 
 Chainable middleware function -> Function that is executed in the route itself. And you can again either add or send the required response.
 
+### Route Parameters Input & Communication
+
+Route parameters help the server know what the client wants to see.
+
+```npm
+route_path: '/user/:username/order/:orderId
+actual_request_URL: '/user/333/order/2802'
+req.params: {username: '333', orderId: '2802'}
+```
+
 ## 3. Backend Development and APIs
 
 ## 4. Claim Your Certifications!
