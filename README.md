@@ -122,6 +122,10 @@ And finishes the cycle by either adding some data or sending a response.
 
 - `next` - If the middleware function is executed successfully then please guide your server to move to the next code by calling `next()`
 
+**NOTE:** The middleware function should be executed before every other route if you are trying to run it for every method/route.
+
+Chainable middleware function -> Function that is executed in the route itself. And you can again either add or send the required response.
+
 ## 3. Backend Development and APIs
 
 ## 4. Claim Your Certifications!
