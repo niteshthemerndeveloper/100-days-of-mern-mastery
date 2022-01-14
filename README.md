@@ -106,6 +106,22 @@ What is the environment variable?
 
 3. It should be separated by underscores and no space is allowed between the `key and value`
 
+Install Environment variable dependency:
+`npm install dotenv`
+
+### Middleware Function -
+
+Used to perform the side effects as well to do the required verification.
+
+A middleware function takes 3 parameters ->
+And finishes the cycle by either adding some data or sending a response.
+
+- `req` - Express request object
+
+- `res` - Express response object
+
+- `next` - If the middleware function is executed successfully then please guide your server to move to the next code by calling `next()`
+
 ## 3. Backend Development and APIs
 
 ## 4. Claim Your Certifications!
