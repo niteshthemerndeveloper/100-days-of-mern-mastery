@@ -6,7 +6,11 @@ Q.2 How to check what changes have been made?
 
 Use - git status
 
-Q.3 How to undo stages local changes?
+Q.3 How to commit changes to the local repository?
+
+Use - git commit -m "Initial Commit"
+
+Q.4 How to undo staged local changes?
 
 Use - git reset file.txt
 
