@@ -136,6 +136,15 @@ actual_request_URL: '/user/333/order/2802'
 req.params: {username: '333', orderId: '2802'}
 ```
 
+We can receive the data in parameters as well as in `queries`.
+
+And access the received data using `req` object.
+
+- req.params
+- req.query
+
+Check out many other useful methods and properties of [req object](https://expressjs.com/en/api.html#req)
+
 ## 3. Backend Development and APIs
 
 ## 4. Claim Your Certifications!
