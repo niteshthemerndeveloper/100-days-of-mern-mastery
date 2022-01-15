@@ -145,6 +145,13 @@ And access the received data using `req` object.
 
 Check out many other useful methods and properties of [req object](https://expressjs.com/en/api.html#req)
 
+| HTML Methods | CRUD Operations | Header | Body |
+| ------------ | --------------- | ------ | ---- |
+| GET          | READ            | Yes    | No   |
+| POST         | CREATE          | Yes    | Yes  |
+| PUT          | UPDATE          | Yes    | Yes  |
+| DELETE       | DELETE          | Yes    | No   |
+
 ## 3. Backend Development and APIs
 
 ## 4. Claim Your Certifications!

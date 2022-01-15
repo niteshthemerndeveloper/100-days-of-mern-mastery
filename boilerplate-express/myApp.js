@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const result = require('dotenv').config();
 
+// body parser to parse the Data
+app.use(express.json({ extended: false }));
+
 // send a file as a response
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html');
@@ -46,6 +49,12 @@ app.get('/:word/echo', (req, res) => {
 
 app.get('/name', (req, res) => {
   res.json({ name: req.query.first + ' ' + req.query.last });
+});
+
+// Use body-parser to Read POST data
+
+app.post('/body', (req, res) => {
+  res.json({ try: req.body });
 });
 
 module.exports = app;
