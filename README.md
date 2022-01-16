@@ -165,6 +165,16 @@ Second Module Completed!
 
 How to install and setup MongoDB and Mongoose?
 
+Use below command to install MongoDB and Mongoose ODM
+
+### Install MongoDB
+
+`npm install mongodb`
+
+### Install Mongoose ODM
+
+`npm install mongoose`
+
 ## 4. Claim Your Certifications!
 
 Best,

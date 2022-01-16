@@ -1,5 +1,8 @@
 require('dotenv').config();
+const mongoose = require('mongoose');
+const mongoURI = process.env.MONGO_URI;
 
+mongoose.connect(mongoURI, () => console.log('MongoDB Connected...'));
 
 let Person;
 
@@ -24,7 +27,7 @@ const findPersonById = (personId, done) => {
 };
 
 const findEditThenSave = (personId, done) => {
-  const foodToAdd = "hamburger";
+  const foodToAdd = 'hamburger';
 
   done(null /*, data*/);
 };
@@ -40,13 +43,13 @@ const removeById = (personId, done) => {
 };
 
 const removeManyPeople = (done) => {
-  const nameToRemove = "Mary";
+  const nameToRemove = 'Mary';
 
   done(null /*, data*/);
 };
 
 const queryChain = (done) => {
-  const foodToSearch = "burrito";
+  const foodToSearch = 'burrito';
 
   done(null /*, data*/);
 };
