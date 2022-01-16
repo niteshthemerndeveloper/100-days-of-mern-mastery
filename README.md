@@ -152,7 +152,18 @@ Check out many other useful methods and properties of [req object](https://expre
 | PUT          | UPDATE          | Yes    | Yes  |
 | DELETE       | DELETE          | Yes    | No   |
 
+Use `body-parser` to parse the Data received on the server. We can use the express built-in body-parser
+
+```js
+// Initialize a Middleware Parser
+app.use(express.json({ extended: false }));
+```
+
+Second Module Completed!
+
 ## 3. Backend Development and APIs
+
+How to install and setup MongoDB and Mongoose?
 
 ## 4. Claim Your Certifications!
 
