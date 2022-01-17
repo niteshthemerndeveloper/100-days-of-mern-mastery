@@ -1,6 +1,6 @@
 # 100 Days of Code Challenge & FreeCodeCamp Certification Challenge
 
-> `Javascript` can be used not only to build an SPA. But it can also be used on the back end, or server, basically, to build entire web applications.
+> `Javascript` can be used not only to build a SPA. But it can also be used on the back end, or server, basically, to build entire web applications.
 
 ## Project that we will build!
 
@@ -23,7 +23,7 @@ How to install and use open source packages available on NPM?
 
 ```
 
-Every `package.json` file should have following important details:
+Every `package.json` file should have the following important details:
 
 - `name` - What is the name of the project?
 
@@ -31,7 +31,7 @@ Every `package.json` file should have following important details:
 
 - `description` - Ideally, every project should have a description. It is not only important but also makes it easy to maintain.
 
-- `keywords` - It is an array of the Important keywords that will make it more easy to understand.
+- `keywords` - It is an array of Important keywords that will make it easier to understand.
 
 - `license` - License is to inform users of what they are allowed to do with your project.
 
@@ -44,7 +44,7 @@ It also lets you state what the user can or can not do with the project.
 - Semantic Versioning: `MAJOR.MINOR.PATCH` -
   MAJOR version increments when you make incompatible API changes.
 
-MINOR version increments when you add functionality in a backwards-compatible manner.
+MINOR version increments when you add functionality in a backward-compatible manner.
 
 And the PATCH version increments when you make bug fixes.
 
@@ -60,7 +60,7 @@ Note: Caret `^` symbol helps to upgrade to the latest Patch as well as MINOR ver
 
 Well! you tell npm by adding the dependencies section in the package.json file.
 
-Note: We as a developer have rights to either add a package or remove it if there' no need.
+Note: We as a developer have the rights to either add a package or remove it if there' no need.
 
 First Module Completed!
 
@@ -82,13 +82,13 @@ We have just created a server that responds with 'Hello Express' but what if we 
 
 We can use `res.sendFile(__dirname + relativePath);` to send a file.
 
-**Note:** We always give absolute path when we have to send a file from our server.
+**Note:** We always give an absolute path when we have to send a file from our server.
 
 To send many static assets, use a middleware function `express.static(PATH, absolutePath)` and call it using app.use().
 
 Serve _JSON_ on a Specific Route - The most preferred way of moving information around the web is _JSON_.
 
-### JSON Object looks as your package.json file
+### JSON Object looks like your package.json file
 
 ```json
 { "key": "value" }
@@ -163,9 +163,9 @@ Second Module Completed!
 
 ## 3. Backend Development and APIs
 
-How to install and setup MongoDB and Mongoose?
+How to install and set up MongoDB and Mongoose?
 
-Use below command to install MongoDB and Mongoose ODM
+Use the below command to install MongoDB and Mongoose ODM
 
 ### Install MongoDB
 
@@ -174,6 +174,20 @@ Use below command to install MongoDB and Mongoose ODM
 ### Install Mongoose ODM
 
 `npm install mongoose`
+
+### CRUD OPERATIONS USING MongoDB
+
+1. C in CRUD: CREATE
+
+We need a Schema that maps to a MongoDB collection.
+
+Schema is nothing but a type of `Table` AND Collection is just One big EXCEL Sheet that can contain many schemas/tables.
+
+And basically, it is referred to as Collections.
+
+When you define what type of data you want to store in the database. Then you create a Model for it.
+
+Model allows you to create instances/examples of your objects.
 
 ## 4. Claim Your Certifications!
 
