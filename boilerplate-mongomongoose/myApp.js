@@ -2,8 +2,6 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const mongoURI = process.env.MONGO_URI;
 let Person = require('./models/Person.js');
-const express = require('express');
-const app = express();
 
 mongoose.connect(mongoURI, () => console.log('MongoDB Connected...'));
 
@@ -18,8 +16,25 @@ const createAndSavePerson = (done) => {
   done(null, result);
 };
 
-const createManyPeople = (arrayOfPeople, done) => {
-  done(null /*, data*/);
+const createManyPeople = async (arrayOfPeople, done) => {
+  arrayOfPeople = [
+    {
+      name: 'Laxman',
+      age: 24,
+      favoriteFoods: ['Satvic', 'Food'],
+    },
+    {
+      name: 'Krishna',
+      age: 33,
+      favoriteFoods: ['Yogurt', 'Milk', 'Butter'],
+    },
+  ];
+  try {
+    const result = await Person.create(arrayOfPeople);
+    done(null, result);
+  } catch (err) {
+    console.error(err.message);
+  }
 };
 
 const findPeopleByName = (personName, done) => {

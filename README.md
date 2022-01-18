@@ -189,6 +189,24 @@ When you define what type of data you want to store in the database. Then you cr
 
 Model allows you to create instances/examples of your objects.
 
+### Create and Save a Record
+
+How do you create a record in your database?
+
+Steps:
+
+- Require the mongoose module and setup a Schema.
+
+- Create a Model for any particular Document
+
+- Connect your server to the Database using `mongoose.connect()`
+
+- Pass the users data as an object to the Model which you just created in the last step.
+
+- call `Model.save()` and then check your database. You should be able to find the users data.
+
+Check out the `/boilerplate-mongomongoose/exercises/createRecord.js` file for the code reference.
+
 ## 4. Claim Your Certifications!
 
 Best,
