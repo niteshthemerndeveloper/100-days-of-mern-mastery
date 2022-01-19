@@ -207,6 +207,12 @@ Steps:
 
 Check out the `/boilerplate-mongomongoose/exercises/createRecord.js` file for the code reference.
 
+Often times we need to work with large number of records and in that case creating just a record wouldn't make sense.
+
+So we will use the array of objects as records and `Model.create()` to create many records in the database.
+
+Check out the `/boilerplate-mongomongoose/exercises/createRecords.js` file for the code reference.
+
 ## 4. Claim Your Certifications!
 
 Best,
