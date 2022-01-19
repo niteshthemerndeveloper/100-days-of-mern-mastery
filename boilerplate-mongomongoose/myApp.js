@@ -5,15 +5,19 @@ let Person = require('./models/Person.js');
 
 mongoose.connect(mongoURI, () => console.log('MongoDB Connected...'));
 
-const createAndSavePerson = (done) => {
-  let person = new Person({
+const createAndSavePerson = async (done) => {
+  let person = await new Person({
     name: 'Krishna',
     age: '33',
     favoriteFoods: ['Apple', 'Walnut', 'Cashewnut'],
   });
 
-  const result = person.save().then((err) => console.error(err.message));
-  done(null, result);
+  try {
+    const result = await person.save();
+    done(null, result);
+  } catch (err) {
+    console.error(err.message);
+  }
 };
 
 const createManyPeople = async (arrayOfPeople, done) => {
@@ -37,8 +41,13 @@ const createManyPeople = async (arrayOfPeople, done) => {
   }
 };
 
-const findPeopleByName = (personName, done) => {
-  done(null /*, data*/);
+const findPeopleByName = async (personName, done) => {
+  try {
+    const result = await Person.find({ name: personName });
+    done(null, result);
+  } catch (err) {
+    console.error(err.message);
+  }
 };
 
 const findOneByFood = (food, done) => {

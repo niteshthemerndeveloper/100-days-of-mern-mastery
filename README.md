@@ -213,6 +213,18 @@ So we will use the array of objects as records and `Model.create()` to create ma
 
 Check out the `/boilerplate-mongomongoose/exercises/createRecords.js` file for the code reference.
 
+2. R in CRUD: READ
+
+To read a record from the database, we have `Model.find()` method that accepts a JSON object and returns the matching records.
+
+### Find a record
+
+- Use `Model.find()` and pass an object with the matching fields.
+
+- You can pass a complete list of fields or just a single matching key and value fields.
+
+## Find Many Records
+
 ## 4. Claim Your Certifications!
 
 Best,
