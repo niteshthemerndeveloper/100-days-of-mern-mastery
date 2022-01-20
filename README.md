@@ -249,6 +249,12 @@ To read a record from the database, we have `Model.find()` method that accepts a
 
 - The Object should have first parameter for searching document, and rest all parameters for updating it.
 
+### Find a record and remove using findOneAndRemove
+
+- Use `Model.findOneAndRemove()` and pass an object with the matching fields.
+
+- The Object should be removed from Database.
+
 ## 4. Claim Your Certifications!
 
 Best,
