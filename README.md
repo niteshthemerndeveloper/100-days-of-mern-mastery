@@ -223,13 +223,17 @@ To read a record from the database, we have `Model.find()` method that accepts a
 
 - You can pass a complete list of fields or just a single matching key and value fields.
 
-## Find Just a Single Matching Document
+### Find Just a Single Matching Document
 
 - Use `Model.findOne()` and pass an object with the matching fields.
 
 - Note: It certainly behaves like `Model.find()` but only returns a single matching document.
 
 - It is mostly useful when you need to find a record that you have declared as unique.
+
+### Find a record using findById()
+
+- Use `Model.findById()` and pass an object with key as `_id` and value can be alpha-numeric.
 
 ## 4. Claim Your Certifications!
 

@@ -11,11 +11,11 @@ const Person = require('../models/Person.js');
 const mongoURI = process.env.MONGO_URI;
 mongoose.connect(mongoURI, () => console.log('MongoDB Connected...'));
 
-// Find just a single Person in the database
-app.get('/find/user', async (req, res) => {
-  const personName = 'Krishna';
+// Find just a single Person in the database By Id
+app.get('/find/:userId', async (req, res) => {
+  const personId = req.params.userId;
   try {
-    const result = await Person.findOne({ name: personName });
+    const result = await Person.findById({ _id: personId });
     res.json({ result });
   } catch (err) {
     console.error(err.message);
@@ -24,4 +24,4 @@ app.get('/find/user', async (req, res) => {
 });
 
 // Create a Server on the PORT 2802
-app.listen(2802, () => console.log(`Server Started on the PORT 2802`));
+app.listen(2802, () => console.log(`Server Started on PORT 2802`));
