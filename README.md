@@ -243,6 +243,12 @@ To read a record from the database, we have `Model.find()` method that accepts a
 
 - Finally, save the updated users info into our DB. Use `Model.save()` method to achieve that.
 
+### Find a record, edit and Update using findOneAndUpdate
+
+- Use `Model.findOneAndUpdate()` and pass an object with the matching fields.
+
+- The Object should have first parameter for searching document, and rest all parameters for updating it.
+
 ## 4. Claim Your Certifications!
 
 Best,

@@ -12,18 +12,14 @@ const mongoURI = process.env.MONGO_URI;
 mongoose.connect(mongoURI, () => console.log('MongoDB Connected...'));
 
 // Find just a single Person in the database By Id
-app.get('/find/:userId', async (req, res) => {
-  const myFood = 'Apple';
-  const personId = req.params.userId;
+app.get('/find/update', async (req, res) => {
   try {
-    const person = await Person.findById({ _id: personId });
+    const result = await Person.findOneAndUpdate(
+      { name: 'Krishna' },
+      { age: '333' },
+      { new: true }
+    );
 
-    // Add food to the favoriteFoods
-    person.favoriteFoods.push(myFood);
-    person.name = 'Krishna';
-
-    // Save the updated person to MongoDB
-    const result = await person.save();
     res.json({ result });
   } catch (err) {
     console.error(err.message);
