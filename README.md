@@ -235,6 +235,14 @@ To read a record from the database, we have `Model.find()` method that accepts a
 
 - Use `Model.findById()` and pass an object with key as `_id` and value can be alpha-numeric.
 
+### Find a record, edit and Update using findById() & Model.save();
+
+- Use `Model.findById()` and pass an object with key as `_id` and value can be alpha-numeric.
+
+- Update the array by using `Array.push()` method.
+
+- Finally, save the updated users info into our DB. Use `Model.save()` method to achieve that.
+
 ## 4. Claim Your Certifications!
 
 Best,
