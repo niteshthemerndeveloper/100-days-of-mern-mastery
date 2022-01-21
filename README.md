@@ -255,6 +255,14 @@ To read a record from the database, we have `Model.find()` method that accepts a
 
 - The Object should be removed from Database.
 
+### Delete Many Records using deleteMany
+
+- Use `Model.deleteMany()` and pass an object with the matching fields.
+
+- The Matching records should be deleted from the database.
+
+**NOTE** Use `Model.deleteMany()` and not `Model.remove().`
+
 ## 4. Claim Your Certifications!
 
 Best,
