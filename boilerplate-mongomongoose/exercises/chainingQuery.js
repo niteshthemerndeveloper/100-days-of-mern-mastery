@@ -13,13 +13,13 @@ const mongoURI = process.env.MONGO_URI;
 mongoose.connect(mongoURI, () => console.log('MongoDB Connected...'));
 
 // Define a get Route
-app.get('/delete', async (req, res) => {
-  const name = 'Krishna';
+app.get('/chains', async (req, res) => {
+  const favoriteFoods = 'Satvic';
   try {
-    // const result = await Person.remove({ name });
-
-    // Model.remove() is deprecated so use Model.deleteMany()
-    const result = await Person.deleteMany({ name });
+    const result = await Person.find({ favoriteFoods })
+      .sort({ name: 1 })
+      .limit(2)
+      .select({ age: false });
     res.json({ result });
   } catch (err) {
     console.error(err.message);
