@@ -263,6 +263,20 @@ To read a record from the database, we have `Model.find()` method that accepts a
 
 **NOTE** Use `Model.deleteMany()` and not `Model.remove().`
 
+### Query Very Specific Records using certain methods
+
+- Use `Model.find()` and pass an object with the matching fields. That will fetch the matching records.
+
+- Use `Model.sort()` and pass an object with the matching key and value as `either 1 or -1`.
+
+**NOTE** 1 will sort the records in ascending and -1 will sort the records in descending order.
+
+- Use `Model.limit()` and pass any value to limit the number of records.
+
+- Use `Model.select()` and pass an object with the matching key and value as `either true or false`.
+
+**NOTE** true will fetch the records and false will hide the records.
+
 ## 4. Claim Your Certifications!
 
 Best,
