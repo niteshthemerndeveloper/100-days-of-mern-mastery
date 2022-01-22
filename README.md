@@ -279,6 +279,14 @@ To read a record from the database, we have `Model.find()` method that accepts a
 
 ## 4. Claim Your Certifications!
 
+### CHALLENGE 1 - TimeStamp Microservice API
+
+- Create a TimeStamp Microservice API that works as below application:
+
+`Challenge Link - https://timestamp-microservice.freecodecamp.rocks/`
+
+SOLVED!
+
 Best,
 
 > Nitesh
