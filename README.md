@@ -287,6 +287,28 @@ To read a record from the database, we have `Model.find()` method that accepts a
 
 SOLVED!
 
+[View Live Demo](https://timestamp-microservices-nitesh.herokuapp.com/)
+
+### CHALLENGE 2 - Request Header Parser Microservice API
+
+- Create a Request Header Parser Microservice API that works as below application:
+
+`Challenge Link - https://request-header-parser-microservice.freecodecamp.rocks/`
+
+SOLVED!
+
+[View Live Demo](https://headerparser-service-by-nitesh.herokuapp.com/)
+
+### CHALLENGE 3 - URL Shortener Microservice API
+
+- Create a URL Shortener Microservice API that works as below application:
+
+`Challenge Link - https://url-shortener-microservice.freecodecamp.rocks/`
+
+SOLVED!
+
+[View Live Demo]()
+
 Best,
 
 > Nitesh

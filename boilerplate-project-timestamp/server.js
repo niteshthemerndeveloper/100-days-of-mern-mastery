@@ -14,12 +14,12 @@ app.use(cors({ optionsSuccessStatus: 200 })); // some legacy browsers choke on 2
 app.use(express.static('public'));
 
 // http://expressjs.com/en/starter/basic-routing.html
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html');
 });
 
 // Greeting API Endpoint
-app.get('/api/hello', function (req, res) {
+app.get('/api/hello', (req, res) => {
   res.json({ greeting: 'hello API' });
 });
 
@@ -49,7 +49,7 @@ app.get('/api/:date', function (req, res) {
   const unixTime = +new Date(req.params.date);
   const utcTime = new Date(req.params.date).toUTCString();
   if (utcTime === 'Invalid Date') {
-    return res.json({ error: utcTime });
+    return res.json({ error: 'Invalid Date' });
   }
   res.json({
     unix: unixTime,
@@ -58,6 +58,5 @@ app.get('/api/:date', function (req, res) {
 });
 
 // listen for requests :)
-var listener = app.listen(3000 || process.env.PORT, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
-});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server Started on the PORT ${PORT}`));
