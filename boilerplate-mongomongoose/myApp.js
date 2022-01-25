@@ -3,7 +3,11 @@ const mongoose = require('mongoose');
 const mongoURI = process.env.MONGO_URI;
 let Person = require('./models/Person.js');
 
-mongoose.connect(mongoURI, () => console.log('MongoDB Connected...'));
+mongoose.connect(
+  mongoURI,
+  { useNewUrlParser: true, useUnifiedTopology: true },
+  () => console.log('MongoDB Connected...')
+);
 
 const createAndSavePerson = async (done) => {
   let person = await new Person({
