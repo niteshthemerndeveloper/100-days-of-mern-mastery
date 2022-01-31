@@ -299,11 +299,11 @@ SOLVED!
 
 [View Live Demo](https://headerparser-service-by-nitesh.herokuapp.com/)
 
-### CHALLENGE 3 - URL Shortener Microservice API
+### CHALLENGE 3 - Exercise Tracker API
 
-- Create a URL Shortener Microservice API that works as below application:
+- Create an Exercise Tracker API that works as below application:
 
-`Challenge Link - https://url-shortener-microservice.freecodecamp.rocks/`
+`Challenge Link - https://exercise-tracker.freecodecamp.rocks/`
 
 SOLVED!
 
